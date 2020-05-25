@@ -722,6 +722,23 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@hscmap/keybind@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@hscmap/keybind/-/keybind-0.2.0.tgz#ae8ca7996b1b59cae2c7adbebfc885e73301fe6b"
+  integrity sha512-bgvQWytR6iaLpPS0eymDubeUSCi4pBxh5tcRG1M3OPBwZCkI41MT9bQ3IC5f2Jqt/QQN0+uSVoWbEPd2xDNwsQ==
+
+"@hscmap/vue-menu@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@hscmap/vue-menu/-/vue-menu-2.10.0.tgz#534475edfc5a36294de2a87f678253d9190acaa3"
+  integrity sha512-0Qgr3mZVZBQoWwGxIxNmgtfo/Hl8fF2oCXccBNGsssT02M8CjK1dxOC6zDtyTudmiNgWoBHK3Agna5xWmFoOMQ==
+  dependencies:
+    "@hscmap/keybind" "^0.2.0"
+    es6-promise "^4.2.6"
+    tslib "^1.9.3"
+    vue "^2.6.10"
+    vue-class-component "^7.0.2"
+    vue-property-decorator "^8.1.0"
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -3275,6 +3292,11 @@ es-to-primitive@^1.2.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es6-promise@^4.2.6:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
+  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
 
 escape-goat@^2.0.0:
   version "2.1.1"
@@ -8324,6 +8346,11 @@ tslib@^1.9.0:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
 
+tslib@^1.9.3:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
+  integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
@@ -8677,6 +8704,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
 
+vue-class-component@^7.0.2, vue-class-component@^7.1.0:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.2.3.tgz#a5b1abd53513a72ad51098752e2dedd499807cca"
+  integrity sha512-oEqYpXKaFN+TaXU+mRLEx8dX0ah85aAJEe61mpdoUrq0Bhe/6sWhyZX1JjMQLhVsHAkncyhedhmCdDVSasUtDw==
+
 vue-cli-plugin-electron-builder@^2.0.0-beta.6:
   version "2.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-electron-builder/-/vue-cli-plugin-electron-builder-2.0.0-beta.6.tgz#cac6b79895b133f882d397166b43e92142a34202"
@@ -8729,6 +8761,13 @@ vue-loader@^15.8.3:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-property-decorator@^8.1.0:
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.4.2.tgz#016e17f259f73bc547e77a50ce282ba18db4ee41"
+  integrity sha512-IqbARlvgPE2pzKfbecKxsu2yEH0Wv7hfHR6m4eZA3LTnNw9hveAX77vDfLFyTeMISS5N7Kucp/xRSHjcQ6bAfQ==
+  dependencies:
+    vue-class-component "^7.1.0"
 
 vue-resize@^0.4.5:
   version "0.4.5"

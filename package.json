@@ -18,6 +18,7 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@hscmap/vue-menu": "^2.10.0",
     "@sagalbot/vueable": "^0.0.3",
     "cassandra-driver": "^4.4.0",
     "cli-highlight": "2.0.0",

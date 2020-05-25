@@ -4,6 +4,7 @@ import VueHotkey from 'v-hotkey'
 import VTooltip from 'v-tooltip'
 import VModal from 'vue-js-modal'
 import Vueable from '@sagalbot/vueable'
+import * as VueMenu from '@hscmap/vue-menu'
 import Tabulator from 'tabulator-tables'
 
 import App from './App.vue'
@@ -84,6 +85,7 @@ import Migration from './migration/index'
     Vue.use(VModal)
     Vue.component('toggle', Vueable.Toggle);
     Vue.component('target', Vueable.Target);
+    Vue.use(VueMenu)
     Vue.use(VueNoty, {
       timeout: 2300,
       progressBar: true,
