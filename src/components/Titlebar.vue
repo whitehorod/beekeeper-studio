@@ -2,25 +2,22 @@
   <div class="titlebar" @dblclick.prevent.stop="maximizeWindow" :class="{windows: isWindows}">
     <div class="titlebar-icon" v-if="!isMac">
       <img src="@/assets/logo.svg" />
-      <template>
-        <hsc-menu-style-white v-if="isWindows">
+      <template v-if="isWindows">
+        <hsc-menu-style-white>
           <hsc-menu-bar style="border-radius: 0 0 4pt 0;">
             <hsc-menu-bar-item label="File">
-              <hsc-menu-item label="New" @click="window.alert('New')" />
-              <hsc-menu-item label="Open" @click="window.alert('Open')" />
+              <hsc-menu-item label="New Query" />
+              <hsc-menu-item label="New Connection" />
               <hsc-menu-separator/>
-              <hsc-menu-item label="Save" @click="window.alert('Save')" :disabled="true" />
-              <hsc-menu-item label="Export to">
-                <hsc-menu-item label="PDF" />
-                <hsc-menu-item label="HTML" />
+              <hsc-menu-item label="Preferences">
+                <hsc-menu-item label="Settings" />
+                <hsc-menu-item label="Keyboard Shortcuts" />
               </hsc-menu-item>
             </hsc-menu-bar-item>
             <hsc-menu-bar-item label="Edit">
-              <hsc-menu-item label="Undo" keybind="meta+z" @click="window.alert('Undo')" />
+              <hsc-menu-item label="Undo" keybind="meta+z" />
               <hsc-menu-separator/>
-              <hsc-menu-item label="Cut" keybind="meta+x" @click="window.alert('Cut')" />
-              <hsc-menu-item label="Copy" keybind="meta+c" @click="window.alert('Copy')" />
-              <hsc-menu-item label="Paste" keybind="meta+v" @click="window.alert('Paste')" :disabled="true" />
+              <hsc-menu-item label="Cut" keybind="meta+x" />
             </hsc-menu-bar-item>
           </hsc-menu-bar>
         </hsc-menu-style-white>

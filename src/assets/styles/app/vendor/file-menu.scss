@@ -1,0 +1,27 @@
+.menubar {
+  background-color: transparent!important;
+  box-shadow: none!important;
+  border-radius: 0!important;
+  color: $text-light!important;
+  font-size: 85%;
+  .menubaritem {
+    display: inline-flex;
+    align-items: center;
+    height: 31px;
+    padding: 0 $gutter-h!important;
+    &:hover, &:focus {
+      background: rgba($theme-base, 0.08)!important;
+    }
+  }
+  .menu {
+    background: lighten($theme-bg, 5%)!important;
+    color: $text!important;
+  }
+  .menuitem {
+    min-width: 150px!important;
+    padding: $gutter-h $gutter-w;
+  }
+  .separator {
+    background-color: $border-color!important;
+  }
+}

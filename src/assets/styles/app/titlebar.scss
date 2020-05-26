@@ -22,9 +22,13 @@
       width: 32px;
     }
   }
+  .menubar {
+    -webkit-app-region: no-drag;
+    margin: -$gutter-h 0;
+  }
   .titlebar-title {
     color: $text-light;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1;
   }
   .titlebar-actions {
